@@ -11,7 +11,7 @@ gem 'gravatar_image_tag', '0.1.0'
 gem 'will_paginate', '3.0.pre2'
 gem 'jquery-rails'
 gem 'nifty-generators'
-gem 'authlogic' # in Gemfile
+gem "authlogic" # in Gemfile
 
 group :development do
 	gem 'rspec-rails', '2.0.1'

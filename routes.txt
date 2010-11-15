@@ -1,0 +1,27 @@
+(in /home/administrador/rails_apps/cafofetis)
+   edit_user        /user/edit(.:format)         {:controller=>"users", :action=>"edit"}
+      signup        /signup(.:format)            {:controller=>"users", :action=>"new"}
+      logout        /logout(.:format)            {:controller=>"sessions", :action=>"destroy"}
+       login        /login(.:format)             {:controller=>"sessions", :action=>"new"}
+    sessions GET    /sessions(.:format)          {:controller=>"sessions", :action=>"index"}
+    sessions POST   /sessions(.:format)          {:controller=>"sessions", :action=>"create"}
+ new_session GET    /sessions/new(.:format)      {:controller=>"sessions", :action=>"new"}
+edit_session GET    /sessions/:id/edit(.:format) {:controller=>"sessions", :action=>"edit"}
+     session GET    /sessions/:id(.:format)      {:controller=>"sessions", :action=>"show"}
+     session PUT    /sessions/:id(.:format)      {:controller=>"sessions", :action=>"update"}
+     session DELETE /sessions/:id(.:format)      {:controller=>"sessions", :action=>"destroy"}
+       users GET    /users(.:format)             {:controller=>"users", :action=>"index"}
+       users POST   /users(.:format)             {:controller=>"users", :action=>"create"}
+    new_user GET    /users/new(.:format)         {:controller=>"users", :action=>"new"}
+   edit_user GET    /users/:id/edit(.:format)    {:controller=>"users", :action=>"edit"}
+        user GET    /users/:id(.:format)         {:controller=>"users", :action=>"show"}
+        user PUT    /users/:id(.:format)         {:controller=>"users", :action=>"update"}
+        user DELETE /users/:id(.:format)         {:controller=>"users", :action=>"destroy"}
+       pages GET    /pages(.:format)             {:controller=>"pages", :action=>"index"}
+       pages POST   /pages(.:format)             {:controller=>"pages", :action=>"create"}
+    new_page GET    /pages/new(.:format)         {:controller=>"pages", :action=>"new"}
+   edit_page GET    /pages/:id/edit(.:format)    {:controller=>"pages", :action=>"edit"}
+        page GET    /pages/:id(.:format)         {:controller=>"pages", :action=>"show"}
+        page PUT    /pages/:id(.:format)         {:controller=>"pages", :action=>"update"}
+        page DELETE /pages/:id(.:format)         {:controller=>"pages", :action=>"destroy"}
+        root        /(.:format)                  {:controller=>"pages", :action=>"home"}
