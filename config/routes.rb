@@ -1,19 +1,15 @@
 Cafofetis::Application.routes.draw do
-  match 'user/edit' => 'users#edit', :as => :edit_user
-
-  match 'signup' => 'users#new', :as => :signup
-
-  match 'logout' => 'sessions#destroy', :as => :logout
-
-  match 'login' => 'sessions#new', :as => :login
 
   resources :sessions
-
   resources :users
-
   resources :pages
 
-  root :to => "pages#home"
+  match 'user/edit' => 'users#edit', :as => :edit_user
+  match 'signup' => 'users#new', :as => :signup
+  match 'logout' => 'sessions#destroy', :as => :logout
+  match 'login' => 'sessions#new', :as => :login
+
+  root :to => 'sessions#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

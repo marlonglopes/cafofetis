@@ -1,5 +1,4 @@
 (in /home/administrador/rails_apps/cafofetis)
-   edit_user        /user/edit(.:format)         {:controller=>"users", :action=>"edit"}
       signup        /signup(.:format)            {:controller=>"users", :action=>"new"}
       logout        /logout(.:format)            {:controller=>"sessions", :action=>"destroy"}
        login        /login(.:format)             {:controller=>"sessions", :action=>"new"}
